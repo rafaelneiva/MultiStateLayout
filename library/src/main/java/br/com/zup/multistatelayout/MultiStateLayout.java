@@ -8,6 +8,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 /**
@@ -23,6 +25,8 @@ public class MultiStateLayout extends FrameLayout {
     private static final int EMPTY_VIEW = 2;
 
     private static final int LOADING_VIEW = 3;
+
+    private static final int ANIMATION_ALPHA = 0;
 
     public enum State {
         CONTENT,
@@ -42,6 +46,10 @@ public class MultiStateLayout extends FrameLayout {
     private View mEmptyView;
 
     private State mViewState = State.CONTENT;
+
+    private Animation mEnterAnimation;
+
+    private Animation mExitAnimation;
 
     public MultiStateLayout(Context context) {
         this(context, null);
@@ -99,6 +107,9 @@ public class MultiStateLayout extends FrameLayout {
                     break;
             }
         }
+
+        mEnterAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
+        mExitAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.fade_out);
 
         a.recycle();
     }
@@ -242,8 +253,8 @@ public class MultiStateLayout extends FrameLayout {
                 this.invalidate();
                 mLoadingView.requestLayout();
                 mLoadingView.invalidate();
-                mContentView.invalidate();
-                mContentView.requestLayout();
+
+                mLoadingView.startAnimation(mEnterAnimation);
 
                 break;
 
@@ -277,9 +288,13 @@ public class MultiStateLayout extends FrameLayout {
                 }
 
                 mContentView.setVisibility(View.VISIBLE);
-                if (mLoadingView != null) mLoadingView.setVisibility(View.GONE);
+                if (mLoadingView != null) {
+                    mLoadingView.startAnimation(mExitAnimation);
+                    mLoadingView.setVisibility(View.GONE);
+                }
                 if (mErrorView != null) mErrorView.setVisibility(View.GONE);
                 if (mEmptyView != null) mEmptyView.setVisibility(View.GONE);
+
                 break;
         }
     }

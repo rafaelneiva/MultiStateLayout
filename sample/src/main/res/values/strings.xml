@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Sample</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sollicitudin mi. Praesent tempus dui ac augue ullamcorper viverra. Vivamus porttitor leo a sem gravida pellentesque. Aenean tristique ipsum sollicitudin odio rhoncus lobortis. Cras quis lobortis purus, ac consectetur augue. Duis non purus aliquet, laoreet turpis tristique, tristique nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam luctus, augue ut condimentum fringilla, nunc dolor congue urna, in eleifend lacus elit vitae ipsum. Mauris eget imperdiet erat, efficitur vehicula justo. Praesent molestie fringilla neque interdum iaculis. Morbi consectetur nisl turpis, ac congue leo bibendum quis. Aliquam nec est non ex pretium porttitor. Duis eget facilisis purus. Ut lectus purus, efficitur et laoreet eu, placerat sollicitudin erat.
+\n\n
+In vestibulum, risus sit amet tincidunt efficitur, nisl turpis commodo nibh, eget pretium arcu tortor at lectus. Donec gravida neque nisl, sit amet commodo diam blandit non. Vivamus feugiat, magna in ullamcorper sodales, eros justo consequat velit, sit amet eleifend lacus dolor vitae diam. Aliquam erat volutpat. Fusce sodales scelerisque vulputate. Integer egestas enim vitae est placerat blandit. Fusce lacinia eget lectus et vestibulum. Praesent mattis nulla sodales dui dictum, ac placerat ipsum condimentum. Maecenas tincidunt id augue at tincidunt. Integer sit amet est neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. In venenatis elit sit amet auctor mollis.
+\n\n
+Curabitur ornare massa magna, ac commodo neque eleifend a. Curabitur in efficitur nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Aenean rhoncus, nunc eu congue rhoncus, sem lacus vulputate quam, ac dignissim nunc augue a lorem. Nullam egestas viverra turpis accumsan suscipit. Suspendisse potenti. Integer porttitor ligula tortor, vulputate tincidunt ipsum luctus sit amet.
+\n\n
+Suspendisse vitae est felis. Nullam tincidunt dolor ante, quis egestas nisi tempor et. Phasellus vitae dictum nunc, vel malesuada arcu. Cras suscipit erat nec odio imperdiet, vitae facilisis urna pellentesque. Quisque ut volutpat nulla. Vivamus sed massa maximus, auctor libero ac, commodo purus. Integer pharetra faucibus eros eu viverra. Ut sollicitudin scelerisque justo sed fermentum. Fusce efficitur convallis tempor. Donec vestibulum lacus quis neque facilisis faucibus. Nulla fringilla tellus at nunc malesuada, vel vestibulum massa luctus. In hac habitasse platea dictumst.
+\n\n
+Cras imperdiet magna nibh, ac vulputate nisl venenatis at. Duis venenatis, turpis a egestas mollis, lacus nibh bibendum nisl, et facilisis augue risus ac arcu. Pellentesque ipsum quam, molestie eget libero at, commodo scelerisque arcu. Sed pellentesque velit blandit, imperdiet nisi at, imperdiet ex. Duis porta mauris sed sapien molestie laoreet. Curabitur bibendum sem eget tellus tristique, sed scelerisque ex mattis. Vestibulum ut justo a quam aliquet dignissim nec nec lectus. Praesent quis enim non ex mattis mattis vel id eros. Sed nec urna aliquam, mollis ante ut, efficitur felis. Aliquam suscipit purus libero.</string>
+    <string name="content">Content</string>
+    <string name="loading">Loading</string>
+    <string name="error">Error</string>
+    <string name="empty">Empty</string>
+    <string name="error_">ERROR\n\n:(</string>
+    <string name="empty_">EMPTY\n\n¬¬</string>
 </resources>

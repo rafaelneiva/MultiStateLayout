@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'multi-state-layout'
+
+    publishedGroupId = 'br.com.zup'
+    libraryName = 'MultiStateLayout'
+    artifact = 'multi-state-layout'
+
+    libraryDescription = 'A layout that uses several states allowing change them quickly and easily'
+
+    siteUrl = 'https://github.com/rafaelneiva/MultiStateLayout'
+    gitUrl = 'https://github.com/rafaelneiva/MultiStateLayout.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'rafaelneiva'
+    developerName = 'Rafael Neiva'
+    developerEmail = 'faelviolero@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+}
+
+// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

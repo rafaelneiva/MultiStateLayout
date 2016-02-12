@@ -7,12 +7,13 @@
 
     <br.com.zup.multistatelayout.MultiStateLayout
         android:id="@+id/multiStateLayout"
-        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         app:msl_emptyLayout="@layout/empty_view"
         app:msl_errorLayout="@layout/error_view"
         app:msl_loadingLayout="@layout/loading_view"
-        app:msl_viewLayout="content">
+        app:msl_state="content">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -45,8 +46,8 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:layout_margin="4dp"
+            android:layout_weight=".25"
             android:background="@drawable/bg_button"
             android:text="@string/content"
             android:textColor="#ffffff"/>
@@ -56,8 +57,8 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:layout_margin="4dp"
+            android:layout_weight=".25"
             android:background="@drawable/bg_button"
             android:text="@string/loading"
             android:textColor="#ffffff"/>
@@ -67,8 +68,8 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:layout_margin="4dp"
+            android:layout_weight=".25"
             android:background="@drawable/bg_button"
             android:text="@string/error"
             android:textColor="#ffffff"/>
@@ -78,8 +79,8 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:layout_margin="4dp"
+            android:layout_weight=".25"
             android:background="@drawable/bg_button"
             android:text="@string/empty"
             android:textColor="#ffffff"/>

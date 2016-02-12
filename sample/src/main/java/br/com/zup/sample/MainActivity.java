@@ -24,28 +24,28 @@ public class MainActivity extends AppCompatActivity {
         btnContent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                multiStateLayout.setViewState(MultiStateLayout.State.CONTENT);
+                multiStateLayout.setState(MultiStateLayout.State.CONTENT);
             }
         });
 
         btnLoading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                multiStateLayout.setViewState(MultiStateLayout.State.LOADING);
+                multiStateLayout.setState(MultiStateLayout.State.LOADING);
             }
         });
 
         btnError.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                multiStateLayout.setViewState(MultiStateLayout.State.ERROR);
+                multiStateLayout.setState(MultiStateLayout.State.ERROR);
             }
         });
 
         btnEmpty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                multiStateLayout.setViewState(MultiStateLayout.State.EMPTY);
+                multiStateLayout.setState(MultiStateLayout.State.EMPTY);
             }
         });
     }

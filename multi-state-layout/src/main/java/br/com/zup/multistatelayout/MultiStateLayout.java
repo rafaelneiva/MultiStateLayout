@@ -87,7 +87,7 @@ public class MultiStateLayout extends FrameLayout {
             addView(mErrorView, mErrorView.getLayoutParams());
         }
 
-        int viewState = a.getInt(R.styleable.MultiStateLayout_msl_viewLayout, UNKNOWN_VIEW);
+        int viewState = a.getInt(R.styleable.MultiStateLayout_msl_state, UNKNOWN_VIEW);
         if (viewState != UNKNOWN_VIEW) {
             switch (viewState) {
                 case CONTENT_VIEW:
@@ -207,7 +207,7 @@ public class MultiStateLayout extends FrameLayout {
      *
      * @param state The {@link State} to set {@link MultiStateLayout} to
      */
-    public void setViewState(State state) {
+    public void setState(State state) {
         if (state != mViewState) {
             mViewState = state;
             setView(false);
@@ -219,7 +219,7 @@ public class MultiStateLayout extends FrameLayout {
      *
      * @param state The {@link State} to set {@link MultiStateLayout} to
      */
-    public void setViewState(State state, boolean hideContent) {
+    public void setState(State state, boolean hideContent) {
         if (state != mViewState) {
             mViewState = state;
             setView(hideContent);
@@ -347,7 +347,7 @@ public class MultiStateLayout extends FrameLayout {
                 break;
         }
 
-        if (switchToState) setViewState(state, true);
+        if (switchToState) setState(state, true);
     }
 
     /**

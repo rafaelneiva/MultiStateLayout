@@ -4,7 +4,7 @@ Android layout with multiple states used to control when show content, loading, 
 It is base on https://github.com/Kennyc1012/MultiStateView
 
 # Gradle dependency
-    compile 'br.com.zup:multi-state-layout:1.0.2'
+    compile 'br.com.zup:multi-state-layout:1.0.3'
 
 # Example
 Add xml.

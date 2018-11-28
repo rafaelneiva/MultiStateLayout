@@ -47,6 +47,3 @@ proguard/
 captures/
 
 *.iml
-
-#Ignore Zupflix folder
-../ZupFlix

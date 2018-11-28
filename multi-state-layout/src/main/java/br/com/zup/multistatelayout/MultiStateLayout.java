@@ -95,7 +95,7 @@ public class MultiStateLayout extends FrameLayout {
                     break;
 
                 case ERROR_VIEW:
-                    mViewState = State.EMPTY;
+                    mViewState = State.ERROR;
                     break;
 
                 case EMPTY_VIEW:
